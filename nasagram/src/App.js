@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import PhotoContainer from './PhotoContainer';
 
 class App extends Component {
   constructor() {
@@ -29,7 +30,8 @@ class App extends Component {
   render() {
     return (
       <section className="app">
-        <p>Is this working?</p>
+        <p>Photos from NASA</p>
+        <PhotoContainer photos={this.state.photos} />
       </section>
     );
   }
