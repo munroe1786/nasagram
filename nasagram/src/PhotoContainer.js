@@ -2,17 +2,29 @@ import React from 'react';
 import Photo from './Photo';
 
 const PhotoContainer = props => {
-    const displayPhotos = () => {
-        return props.photos.map(photo => {
-            return <Photo url={photo.url} />;
-        });
-    };
 
-    return (
-        <>
-            <section>{displayPhotos()}</section>
-        </>
-    );
+    return(
+        <div>
+            {props.photos.map(photo =>
+                <li key={photo.id}>
+                    <Photo />
+                </li>)}
+        </div>
+    )
+    
+    //const displayPhotos = () => {
+        //{props.photos.map(photo => 
+          //  <li key={photo.id}>
+            //return <Photo url={photo.url} />;
+            //</li>
+        //);
+    //};
+
+    //return (
+      ////  <>
+          //  <section>{displayPhotos()}</section>
+        //</>
+    //);
 };
 
-export default PhotoContainer
+export default PhotoContainer;

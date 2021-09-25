@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import PhotoContainer from './PhotoContainer';
+import PhotoContainer from './PhotoContainer.js';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      photos: []
+      photos: [],
     };
   }
 
   componentDidMount() {
-    fetch("https://api.nasa.gov/planetary/apod?api_key=qYMkhKNzouHj0LwWEqREsgVmVgZ2EmZ3JbfrPBC2")
+    fetch("https://api.nasa.gov/planetary/apod?count=10&api_key=qYMkhKNzouHj0LwWEqREsgVmVgZ2EmZ3JbfrPBC2")
     .then(response => {
         if (!response.ok) {
           throw Error('Error fetching the photos');
