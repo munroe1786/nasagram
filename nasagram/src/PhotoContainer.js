@@ -1,13 +1,13 @@
 import React from 'react';
 import Photo from './Photo';
 
-const PhotoContainer = props => {
+const PhotoContainer = (props) => {
 
     return(
         <div>
             {props.photos.map(photo =>
                 <li key={photo.id}>
-                    <Photo />
+                    <Photo url={photo.url} />
                 </li>)}
         </div>
     )
