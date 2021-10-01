@@ -4,7 +4,8 @@ const Photo = (props) => {
     const {
         url,
         title,
-        date
+        date,
+        explanation
     } = props
 
     return (
@@ -12,6 +13,7 @@ const Photo = (props) => {
             <img src={props.url} alt="NASA portait"/>
             <p>{title} </p>
             <p>{date}</p>
+            <p>{explanation}</p>
         </section>
     )
 }

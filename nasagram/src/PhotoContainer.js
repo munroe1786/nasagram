@@ -10,6 +10,7 @@ const PhotoContainer = (props) => {
                     <Photo url={photo.url} 
                             title={photo.title}  
                             date={photo.date}  
+                            explanation={photo.explanation}
                     />
                 </li>)}
         </div>
