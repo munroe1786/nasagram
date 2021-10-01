@@ -8,7 +8,8 @@ const PhotoContainer = (props) => {
             {props.photos.map(photo =>
                 <li key={photo.id}>
                     <Photo url={photo.url} 
-                            title={photo.title}    
+                            title={photo.title}  
+                            date={photo.date}  
                     />
                 </li>)}
         </div>
