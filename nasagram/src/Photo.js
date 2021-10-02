@@ -10,7 +10,7 @@ const Photo = (props) => {
 
     return (
         <section>
-            <img src={props.url} alt="NASA portait"/>
+            <img src={url} alt="NASA portait"/>
             <p>{title} </p>
             <p>{date}</p>
             <p>{explanation}</p>
