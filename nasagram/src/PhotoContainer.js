@@ -11,7 +11,7 @@ const PhotoContainer = (props) => {
                             title={photo.title}  
                             date={photo.date}  
                             explanation={photo.explanation}
-                    />
+                        />
                 </li>)}
         </div>
     )
