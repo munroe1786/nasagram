@@ -1,5 +1,6 @@
 import React from 'react';
 import Photo from './Photo';
+import HeartToggle from './HeartToggle';
 
 const PhotoContainer = (props) => {
 
@@ -12,6 +13,7 @@ const PhotoContainer = (props) => {
                             date={photo.date}  
                             explanation={photo.explanation}
                         />
+                    <HeartToggle />
                 </li>)}
         </div>
     )
