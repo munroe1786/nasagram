@@ -9,12 +9,12 @@ const Photo = (props) => {
     } = props
 
     return (
-        <section>
+        <ul>
             <img src={url} alt="NASA portait"/>
             <p>{title} </p>
             <p>{date}</p>
             <p>{explanation}</p>
-        </section>
+        </ul>
     )
 }
 
