@@ -1,3 +1,9 @@
+Welcome to Nasagram!  
+
+This app displays 10 random images from the NASA planetary image API.  Just refresh the page to see different images.
+
+Fork and clone this repository to use the app.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
